@@ -1,0 +1,1 @@
+<h1>Bem-Vindo a página de teste de PHP</h1>
