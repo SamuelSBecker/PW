@@ -1,4 +1,4 @@
-<h2>Dados do Registro</h2>
+<h2>Dados do Registro</h2><br>
 <table class="table table-striped">
     <tr>
         <th>Nome:</th>

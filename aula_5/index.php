@@ -29,21 +29,21 @@ if(!isset($_GET['controller'])){ // se url controler não está setada
         }
     break;  //para
 
-    case 'clients':
-        require_once('controllers/clients.php');
-        $client = new clientsController();
-        if(!isset($_GET['action'])){
-            $client -> index();
-        }else{
-            switch($_REQUEST['action']){
-                case 'register':    
-                    $client->register();   
+    case 'clients': //caso url client
+        require_once('controllers/clients.php');    //chama controladora clients
+        $client = new clientsController();  //variavel client = classe clientsController
+        if(!isset($_GET['action'])){    //se action não estiver setada
+            $client -> index();     //variavel client chama função index()
+        }else{  //se não
+            switch($_REQUEST['action']){    //switch url action
+                case 'register':        //caso url register
+                    $client->register();    //variavel client chama função register
+                break;  //para
+                case 'registerView':    //caso url registerView
+                    $client -> registerView();  //variavel client chama função registerView
                 break;
-                case 'registerView':
-                    $client -> registerView();
-                break;
-                case 'clientList' :
-                    $client -> clientList();
+                case 'clientList' :     //caso url clientList
+                    $client -> clientList();    //variavel client chama função clientList
                 break;
             }
         }
