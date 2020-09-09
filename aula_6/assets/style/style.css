@@ -1,0 +1,33 @@
+body{
+    width: 100%;
+}
+
+header{
+    background-color: #EDEDED;
+    text-align: center;
+    color: #4B4E6E;
+}
+
+aside{
+    background-color: #2A3F54;
+    color: white;
+    height: 480px;
+    width: 20%;
+    padding: 40px 10px 20px 10px;
+}
+
+aside a{
+    color: white;
+}
+aside a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: #EDEDED;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+}
